@@ -1,0 +1,166 @@
+body { 
+  background-color: black; 
+  color: white;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links-container {
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+#logo {
+  height: 30px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.get-started {
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border: none;
+  padding: 20px;
+  width: 300px;
+  border-radius: 50px;
+  color: white;
+}
+
+#features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.feature-img {
+  height: 50px;
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.how-it-works h3 {
+  align-self: left;
+}
+
+#how-it-works-img {
+  width: 80%;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+#how-it-works-link {
+  color: hsl(176, 68%, 64%);
+  padding-right: 5px;
+}
+
+#link-arrow {
+  height: 20px;
+}
+
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: hsl(219, 30%, 18%);
+}
+
+/* .testimonial-text {
+
+} */
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-pic {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-name {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-role {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.name-role-container {
+  display: flex;
+  flex-direction: column;
+}
+
