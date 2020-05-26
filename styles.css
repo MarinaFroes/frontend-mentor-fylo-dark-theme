@@ -1,6 +1,17 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: Raleway;
+}
+
 body { 
   background-color: black; 
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .attribution { 
@@ -15,22 +26,44 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 1.5rem;
 }
 
 #links-container {
-  /* border: 2px solid white; */
   display: flex;
   align-items: center;
 }
 
 .nav-links {
-  color: white;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
-  padding: 0 20px;
+  padding: 0 10px;
+  font-size: 0.8rem;
 }
 
 #logo {
-  height: 30px;
+  height: 20px;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1.0rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+button {
+  font-size: 0.8rem;
+  margin: 1.5rem;
 }
 
 header {
@@ -39,31 +72,27 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
-h1 {
-  font-size: 2rem;
+#header-img {
+  width: 80%;
 }
 
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-p {
-  font-size: 1rem;
+.images-container {
+  top: 0;
+  background: url('./images/bg-curvy-mobile.svg') bottom center / 100% no-repeat;
+  border: 2px solid blue;
+  height: 340px;
 }
 
 .get-started {
   background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   border: none;
-  padding: 20px;
-  width: 300px;
+  padding: 15px;
+  width: 70%;
   border-radius: 50px;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 #features-container {
@@ -128,17 +157,20 @@ p {
   margin-top: 30px;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  width: 80%;
   background-color: hsl(219, 30%, 18%);
 }
 
-/* .testimonial-text {
-
-} */
+.testimonial-text {
+  padding: 10px;
+  font-size: 0.8rem;
+  line-height: 2;
+}
 
 .profile {
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 
 .testimonial-pic {
@@ -149,12 +181,13 @@ p {
 
 .profile-name {
   font-weight: 700;
+  font-size: 0.7rem;
   padding: 0;
   margin: 0;
 }
 
 .profile-role {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   padding: 0;
   margin: 0;
 }
@@ -164,3 +197,31 @@ p {
   flex-direction: column;
 }
 
+#signin {
+  background-color: hsl(217, 28%, 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.footer-info {
+  display: flex;
+}
+
+.footer-icon {
+  width: 20px;
+  padding: 10px;
+}
+
+.info-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
