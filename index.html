@@ -5,32 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body { background-color: black; color: white;}
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <nav>
-    <div id="logo-container">
-      <img src="./images/logo.svg" alt="" id="logo">
-    </div>
+    <img src="./images/logo.svg" alt="" id="logo">
     <div id="links-container">
-      <a href="/features" class="links">Features</a>
-      <a href="/team" class="links">Team</a>
-      <a href="/signin" class="links">Sign In</a>
+      <a href="/features" class="nav-links">Features</a>
+      <a href="/team" class="nav-links">Team</a>
+      <a href="/signin" class="nav-links">Sign In</a>
     </div>
   </nav>
   <header>
     <img src="./images/illustration-intro.png" alt="" id="header-img">
     <h1> All your files in one secure location, accessible anywhere.</h1>
-    <h2>Fylo stores all your most important files in one secure location. Access them wherever
-    you need, share and collaborate with friends family, and co-workers.</h2>
+    <h2>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</h2>
     <button class="get-started">Get Started</button>
   </header>
   <main>
@@ -66,8 +56,8 @@
       <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
       <div class="link-container">
-        <a href="/" class="how-it-works-link">See how Fylo works</a>
-        <img src="./images/icon-arrow.svg" alt="" class="link-arrow">
+        <a href="/" id="how-it-works-link">See how Fylo works</a>
+        <img src="./images/icon-arrow.svg" alt="" id="link-arrow">
       </div>
       </section>
     <section id="team">
@@ -76,16 +66,20 @@
         <p class="testimonial-text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
         <div class="profile">
           <img src="./images/profile-1.jpg" alt="" class="testimonial-pic">
-          <p class="profile-name">Satish Patel</p>
-          <p class="profile-role">Founder & CEO, Huddle</p>
+          <div class="name-role-container">
+            <p class="profile-name">Satish Patel</p>
+            <p class="profile-role">Founder & CEO, Huddle</p>
+          </div>
         </div>
       </div>
       <div class="testimonial-card">
         <p class="testimonial-text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
         <div class="profile">
           <img src="./images/profile-2.jpg" alt="" class="testimonial-pic">
-          <p class="profile-name">Bruce McKenzie</p>
-          <p class="profile-role">Founder & CEO, Huddle</p>
+          <div class="name-role-container">
+            <p class="profile-name">Bruce McKenzie</p>
+            <p class="profile-role">Founder & CEO, Huddle</p>
+          </div>    
         </div>
       </div>
       <div class="testimonial-card">
@@ -93,8 +87,10 @@
         become a well-oiled collaboration machine.</p>
         <div class="profile">
           <img src="./images/profile-3.jpg" alt="" class="testimonial-pic">
-          <p class="profile-name">Iva Boyd</p>
-          <p class="profile-role">Founder & CEO, Huddle</p>
+          <div class="name-role-container">
+            <p class="profile-name">Iva Boyd</p>
+            <p class="profile-role">Founder & CEO, Huddle</p>
+          </div>
         </div>
       </div>
 
