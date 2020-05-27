@@ -11,24 +11,27 @@
 </head>
 <body>
   <nav>
-    <img src="./images/logo.svg" alt="" id="logo">
-    <div id="links-container">
+    <img src="./images/logo.svg" alt="" class="logo">
+    <div class="links-container">
       <a href="/features" class="nav-links">Features</a>
       <a href="/team" class="nav-links">Team</a>
       <a href="/signin" class="nav-links">Sign In</a>
     </div>
   </nav>
   <header>
-    <div class="images-container">
-      <img src="./images/illustration-intro.png" alt="" id="header-img">
+    <div class="image-container">
+      <img src="./images/illustration-intro.png" alt="" class="header-img">
     </div>
-    
-    <h1> All your files in one secure location, accessible anywhere.</h1>
-    <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-    <button class="get-started">Get Started</button>
+    <div class="bg-curvy">
+    </div>
+    <div class="intro-text">
+      <h1> All your files in one secure location, accessible anywhere.</h1>
+      <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+      <button class="get-started">Get Started</button>
+    </div>
   </header>
   <main>
-    <section id="features-container">
+    <section class="features-container">
       <div class="feature">
         <img src="./images/icon-access-anywhere.svg" alt="" class="feature-img">
         <h3>Access your files, anywhere</h3>
@@ -55,16 +58,16 @@
       </div>
     </section>
     <section class="how-it-works">
-      <img src="./images/illustration-stay-productive.png" alt="" id="how-it-works-img">
+      <img src="./images/illustration-stay-productive.png" alt="" class="how-it-works-img">
       <h3>Stay productive, wherever you are</h3>
       <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
       <div class="link-container">
-        <a href="/" id="how-it-works-link">See how Fylo works</a>
-        <img src="./images/icon-arrow.svg" alt="" id="link-arrow">
+        <a href="/" class="how-it-works-link">See how Fylo works</a>
+        <img src="./images/icon-arrow.svg" alt="" class="link-arrow">
       </div>
       </section>
-    <section id="team">
+    <section class="team">
       <img src="./images/bg-quotes.png" alt="" class="testimonial-quote">
       <div class="testimonial-card">
         <p class="testimonial-text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
@@ -97,39 +100,46 @@
           </div>
         </div>
       </div>
-
     </section>
-    <section id="signin">
-      <h3>Get early access today</h3>
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-      <button class="get-started">Get Started For Free</button>
-    </section>
-    <section class="about">
-      <img src="./images/logo.svg" alt="" class="footer-logo">
-      <div class="footer-info">
-        <img src="./images/icon-location.svg" alt="" class="footer-icon">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-      </div>
-      <div class="footer-info">
-        <img src="./images/icon-phone.svg" alt="" class="footer-icon">
-        <p>+1-543-123-4567</p>
-      </div>
-      <div class="footer-info">
-        <img src="./images/icon-email.svg" alt="" class="footer-icon">
-        <p>example@fylo.com</p>
-      </div>
-      <div class="info-links">
-        <a href="#" class="info-link">About us</a>
-        <a href="#" class="info-link">Jobs</a>
-        <a href="#" class="info-link">Press</a>
-        <a href="#" class="info-link">Blog</a>
-        <a href="#" class="info-link">Contact Us</a>
-        <a href="#" class="info-link">Terms</a>
-        <a href="#" class="info-link">Privacy</a>
+    <section class="signin">
+      <div class="signin-card">
+        <h3>Get early access today</h3>
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our
+          support team would be happy to help you.</p>
+        <input type="email" name="email-input" class="email-input" placeholder="email@example.com">
+        <button class="get-started signin-btn">Get Started For Free</button>
       </div>
     </section>
   </main>
   <footer>
+    <div class="about">
+      <img src="./images/logo.svg" alt="" class="footer-logo">
+      <div class="footer-info">
+        <img src="./images/icon-location.svg" alt="" class="footer-icon">
+        <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="footer-info">
+        <img src="./images/icon-phone.svg" alt="" class="footer-icon">
+        <p class="footer-text">+1-543-123-4567</p>
+      </div>
+      <div class="footer-info">
+        <img src="./images/icon-email.svg" alt="" class="footer-icon">
+        <p class="footer-text">example@fylo.com</p>
+      </div>
+      <div class="info-links">
+        <div class="links-group">
+          <a href="#" class="info-link">About us</a>
+          <a href="#" class="info-link">Jobs</a>
+          <a href="#" class="info-link">Press</a>
+          <a href="#" class="info-link">Blog</a>
+        </div>
+        <div class="links-group">
+          <a href="#" class="info-link">Contact Us</a>
+          <a href="#" class="info-link">Terms</a>
+          <a href="#" class="info-link">Privacy</a>
+        </div>
+      </div>
+    </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/MarinaFroes" target="_blank" >Marina Costa</a>.
