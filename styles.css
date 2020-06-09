@@ -1,3 +1,13 @@
+:root {
+  --intro-bg-color: hsl(217, 28%, 15%);
+  --signup-bg-color: hsl(217, 28%, 15%);
+  --main-bg-color: hsl(218, 28%, 13%);
+  --footer-bg-color: hsl(216, 53%, 9%);
+  --testimonials-bg-color: hsl(219, 30%, 18%);
+  --white-bg-color: hsl(0, 0%, 100%);
+  --main-txt-color: hsl(0, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,41 +19,39 @@ html {
   font-family: Raleway;
 }
 
-body { 
-  background-color: black; 
-  color: hsl(0, 0%, 100%);
-}
-
-main {
-  background-color: hsl(218, 28%, 13%);
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
 }
 
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 h2 {
-  font-size: 1.1rem;
-}
-
-h3 {
-  font-size: 1.0rem;
+  font-size: 1.4rem;
+  padding: 1rem 0;
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 button {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin: 1.5rem;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border: none;
+  height: 3.5rem;
+  width: 70%;
+  border-radius: 50px;
+  color: var(--main-txt-color);
 }
-
 
 /* Navigation bar */
 
 nav {
-  background-color:  hsl(217, 28%, 15%);
+  background-color:  var(--intro-bg-color);
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -55,7 +63,7 @@ nav {
 }
 
 .nav-links {
-  color: hsl(0, 0%, 100%);
+  color: var(--main-txt-color);
   text-decoration: none;
   padding: 0 10px;
   font-size: 0.8rem;
@@ -68,103 +76,127 @@ nav {
 /* Header */
 
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--intro-bg-color);
+  grid-column: 1 / span 10;
   text-align: center;
-  width: 100%;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 6fr 1fr 2fr 7fr;
 }
 
 .header-img {
-  width: 80%;
+  width: 100%;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  z-index: 10000;
 }
 
-.image-container {
-  top: 0;
-  background-color: hsl(217, 28%, 15%);
+.bg-curvy-mobile {
   width: 100%;
-}
-
-.bg-curvy {
-  background: url('./images/bg-curvy-mobile.svg') bottom center / 100% no-repeat;
-  border: 2px solid yellow;
-  height: 300px;
-  width: 100%;
-  position: absolute;
-  top: 350px;
-  z-index: -1;
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 3;
+  background-color: var(--intro-bg-color);
+  z-index: 5000;
 }
 
 .intro-text {
-  border: 2px solid blue;
-  /* background-color: hsl(218, 28%, 13%); */
-  padding: 2rem;
+  grid-column: 2;
+  grid-row: 3 / span 2;
+  z-index: 10000;
 }
 
-button.get-started {
-  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
-  border: none;
-  padding: 15px;
-  width: 70%;
-  border-radius: 50px;
-  color: hsl(0, 0%, 100%);
+.intro-text h1 {
+  padding: 1.5rem 0;
 }
+
+.bg-curvy-desktop {
+  display: none;
+}
+
+.bg-div {
+  background-color: var(--main-bg-color);
+  grid-column: 1 / span 3;
+  grid-row: 4;
+}
+
+/* Features */
 
 .features-container {
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .feature {
-  margin: 30px;
+  margin: 3rem 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 300px;
+  max-width: 400px;
 }
 
 .feature-img {
-  height: 50px;
+  height: 4.5rem;
 }
+
+/* How it works */
 
 .how-it-works {
+  margin: 5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  align-items: left;
 }
 
-.how-it-works h3 {
-  align-self: left;
+.how-it-works h2 {
+  margin-top: 2rem;
+}
+
+.how-it-works p {
+  margin-bottom: 1.8rem;
 }
 
 .how-it-works-img {
   width: 80%;
+  align-self: center;
 }
 
 .link-container {
   display: flex;
   align-items: center;
   align-self: flex-start;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
 }
 
 .how-it-works-link {
   color: hsl(176, 68%, 64%);
-  padding-right: 5px;
+  padding: 0 5px 5px 0;
+  text-decoration: none;
 }
 
 .link-arrow {
   height: 20px;
 }
 
-.team {
+/* Testimonial */
+
+.testimonial {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.testimonial-card:first-child {
+  position: relative;
+}
+
+.testimonial-quote {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  height: 20px;
 }
 
 .testimonial-card {
@@ -175,7 +207,8 @@ button.get-started {
   padding: 20px;
   border-radius: 10px;
   width: 80%;
-  background-color: hsl(219, 30%, 18%);
+  max-width: 400px;
+  background-color: var(--testimonials-bg-color);
 }
 
 .testimonial-text {
@@ -218,12 +251,11 @@ button.get-started {
 .signin {
   position: relative;
   padding: 2rem;
-  /* border: 2px solid red; */
-  height: 300px;
+  height: 500px;
 }
 
 .signin-card {
-  background-color: hsl(217, 28%, 15%);
+  background-color: var(--signup-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,19 +266,28 @@ button.get-started {
   left: 20px;
   right: 20px;
   border: 2px solid white;
+  text-align: center;
+}
+
+.signin-card h3 {
+  padding: 1rem 0;
+}
+
+.signin-card p {
+  padding: 2rem 1rem;
 }
 
 .email-input {
   border: none;
+  height: 3.5rem;
+  width: 90%;
+  font-size: 1.1rem;
+  padding-left: 2rem;
+  border-radius: 50px;
 }
 
 button.signin-btn {
-  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
-  border: none;
-  padding: 15px;
   width: 90%;
-  border-radius: 50px;
-  color: hsl(0, 0%, 100%);
 }
 
 /* Footer */
@@ -254,7 +295,7 @@ button.signin-btn {
 footer {
   margin: 0;
   padding: 12rem 2rem 2rem 2rem;
-  background-color: hsl(216, 53%, 9%);
+  background-color: var(--footer-bg-color);
   border: 2px solid yellow;
 }
 
@@ -280,10 +321,12 @@ footer {
 .footer-icon {
   width: 1rem;
   border: 2px solid pink;
+  padding-top: 10px;
 }
 
 .footer-text {
-  padding: 0.5rem 0 1rem;
+  padding: 5px 0 0 1rem;
+  border: 2px solid red;
 }
 
 .info-links {
