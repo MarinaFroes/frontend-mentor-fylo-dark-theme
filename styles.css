@@ -343,11 +343,25 @@ footer {
   padding: 0.5rem 0;
 }
 
+.attribution-container {
+  text-align: center;
+}
+
 .attribution { 
   font-size: 11px; 
-  text-align: center; 
+  text-align: center;
 }
 
 .attribution a { 
-  color: white; 
+  color: var(--main-txt-color); 
+}
+
+.icon {
+  text-decoration: none;
+  color: var(--main-txt-color);
+  padding: 1rem;
+}
+
+.icon:hover {
+  color: grey;
 }
