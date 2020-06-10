@@ -1,12 +1,15 @@
 <p align="center"><img src="./images/mylogo.svg" alt="logo" title="logo" width="80"></p>
 <h1 align="center">Frontend Mentor - Fylo landing page with dark theme</h1>
 
-[**IN PROGRESS**]
-I created this landing page based on the [Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd) - Fylo landing page with dark theme design.
+I created this landing page based on the [Frontend Mentor - Fylo landing page with dark theme](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd) design.
 
 ## Overview
 
-![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)
+- Here you can preview the results for mobile and desktop:
+
+![Design preview for the Fylo landing page with dark theme for mobile version](./design/result/mobile-version.png)
+
+![Design preview for the Fylo landing page with dark theme for desktop version](./design/result/desktop-version.png)
 
 ## Goals
 
